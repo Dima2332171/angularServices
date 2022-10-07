@@ -1,0 +1,31 @@
+.wrapper{
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+}
+.flex-direction{
+  display: flex;
+}
+
+img{
+  width:350px;
+  margin: 10px;
+}
+
+.full-inform>div{
+  margin-bottom: 10px;
+  margin-left: 175px;
+}
+
+.skills{
+  display: flex;
+}
+
+.skills>div{
+  margin-left: 40px;
+  background-color: greenyellow;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}

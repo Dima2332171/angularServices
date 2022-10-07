@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="wrapper">
+    <div class="flex-direction">
+    <div>
+  <img [src]="path" alt="">
+    </div>
+    <div class="full-inform">
+  <div>First name: {{firstName|uppercase}}</div>
+  <div>Last name: {{lastName|uppercase}}</div>
+  <div>Date of Birth: {{birthday|date:'mediumDate'}}</div>
+  <div>Phone number: {{phoneNumber}}</div>
+  <div>Adress: {{adress}}</div>
+  <div>Desired: {{salary|currency:'UAH':'грн':'1.1-1':'ru'}}</div>
+    </div>
+    </div>
+</div>
+  <div class="wrapper">
+    <h2>Work experience</h2>
+    <ul>
+      <li *ngFor="let item of items">{{item.name}}</li>
+    </ul>
+  </div>
+
+<div class="wrapper">
+  <h2>Skills</h2>
+  <div class="skills">
+  <div *ngFor="let element of skill">{{element}}</div>
+  </div>
+  <br>
+  <h2>Certificates</h2>
+  <div [ngStyle]="{'background-color':'orange', 'width':'120px','height':'30px', 'text-align':'center','border-radius':'10px'}">Microsoft Azure</div>
+</div>
+</div>
